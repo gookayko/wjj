@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+	// for(var i=20;i>10;i--){
+	// 	// for(var )
+	// 	document.write(i+ '<br />');
+	// }
+
+
+	// for(var i=20;i>12;i--){
+	// 	document.write(i);
+	// }
+
+
+	// for(var i=0;i<5;i++){
+	// 	for(var j=0;j<10;j++){
+	// 		document.write('*');
+	// 	}
+	// 	document.write('<br />');
+	// }
+
+
+	// for(var i=0;i<5;i++){
+	// 	for(var j=0;j<i;j++){
+	// 		document.write('*');
+	// 	}
+	// 	document.write('<br />');
+	// } //金字塔
+
+
+  
+	for(var i=1;i<10;i++){
+		for(var j=1;j<=i;j++){
+			document.write(j+ '*' +i+ '='+i*j+ ' ');
+		}
+		document.write('<br />');
+	}
+
+
+
+    var rows=prompt('please input your line')
+	for(var i=0;i<=rows;i++){
+		for(var x=0;x<rows-i;x++){
+			
+			document.write('&nbsp;');
+		}
+		for(var y=0;y<2*i-1;y++){
+		document.write('*');
+		}
+			document.write('<br />');
+	}
+
+
+
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
