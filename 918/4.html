@@ -1,0 +1,46 @@
+<body>
+    <header>
+        <img src="image/photo.jpg"/>
+        <nav>
+            <ul>
+                <li><a href="index.html">1</a></li>
+                <li><a href="About.html">2</a></li>
+                <li><a href="Photos.html">3</a></li>
+                <li><a href="Live.html">4</a></li>
+                <li><a href="Contact.html">5</a></li>
+            </ul>
+        </nav>
+        <div id="list">
+            <ul>
+                <li><a href="####" onclick="showText()">凯2</a>><span>2017-05-18</span></li>
+                <li>]<a href="####" onclick="showText()">凯</a><span>2017-05-18</span></li>
+                <li><a href="####" onclick="showText()">行</a><span>2017-05-18</span></li>
+                <li><a href="####" onclick="showText()">性</a><span>2017-05-18</span></li>
+              </ul>
+        </div>
+    </header>
+    <div id="tt">
+        <div id="form">
+            <img src="image/q.jpg" onclick="noText()"/>
+            <form name="myform">
+                <div class="div_input">观看密匙:<input type="text" class="input_password" name="name"/></div>
+                <div id="button">
+                    <button type="button" class="button1" name="button" onclick="print()">登陆验证</button>
+                    <button type="button" class="button2" onclick="noEnroll()">获取密匙</button>
+                 </div>
+            </form>
+        </div>
+        <div id="enroll">
+            <img src="image/q.jpg"  class="img1" onclick="noText()"/>
+            <img src="image/20.png" class="img2"/>
+            <span>此区观看需要付费,微信支付后台自动发送密匙到微信.</span>
+        </div>
+    </div>
+</body>
+
+
+javascript的showText：
+function showText(){
+    document.getElementById("form").style.display = "block";
+}
+每次点击2后3和4无法点击，1和5可以正常点击。点击1或5后2和3和4可以正常点击。
