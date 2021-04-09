@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<script type="text/javascript">
+//删除数组重复的元素
+
+function quchong(arr){
+	for(var i=0;i<arr.length;i++){
+		for(var j=i+1;j<arr.length;j++){
+			if(arr[i]==arr[j]){
+				arr.slice(j,1);
+				j--;
+			}
+		}
+	}
+	return arr;
+}
+var sz=['a','a','f','b','i','y','t','u','b','a'];
+var re=quchong(sz);
+document.write(re);
+
+</script>
+<body>
+	
+</body>
+</html>
